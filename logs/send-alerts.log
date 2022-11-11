@@ -1,0 +1,66 @@
+[Tue 14 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-14-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   4000      0 --:--:-- --:--:-- --:--:--  4000
+[Tue 14 Jun 2022 07:00:01 AM PST]: End
+[Wed 15 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-15-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   6000      0 --:--:-- --:--:-- --:--:-- 12000
+[Wed 15 Jun 2022 07:00:01 AM PST]: End
+[Thu 16 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-16-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   6000      0 --:--:-- --:--:-- --:--:-- 12000
+[Thu 16 Jun 2022 07:00:01 AM PST]: End
+[Fri 17 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-17-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Fri 17 Jun 2022 07:00:01 AM PST]: End
+[Sat 18 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-18-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   6000      0 --:--:-- --:--:-- --:--:--  6000
+[Sat 18 Jun 2022 07:00:01 AM PST]: End
+[Sun 19 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-19-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   6000      0 --:--:-- --:--:-- --:--:-- 12000
+[Sun 19 Jun 2022 07:00:01 AM PST]: End
+[Mon 20 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-20-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   4000      0 --:--:-- --:--:-- --:--:--  6000
+[Mon 20 Jun 2022 07:00:02 AM PST]: End
+[Tue 21 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-21-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   4000      0 --:--:-- --:--:-- --:--:--  4000
+[Tue 21 Jun 2022 07:00:01 AM PST]: End
+[Wed 22 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-22-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   6000      0 --:--:-- --:--:-- --:--:-- 12000
+[Wed 22 Jun 2022 07:00:01 AM PST]: End
+[Thu 23 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-23-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0   1000      0 --:--:-- --:--:-- --:--:--  1000
+[Thu 23 Jun 2022 07:00:01 AM PST]: End
+[Fri 24 Jun 2022 07:00:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-24-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Fri 24 Jun 2022 07:00:01 AM PST]: End

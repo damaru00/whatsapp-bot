@@ -1,0 +1,118 @@
+Backup Verifier
+
+
+[Sun Jun 19 06:30:01 PST 2022]: Starting script
+
+
+dayCur:  06-19-2022
+dayBef:  06-18-2022
+
+======================================================================
+
+ FOUND: /data/PROD_DB_BACKUP/JUNE 2022/06-19-2022
+
+======================================================================
+
+[Sun Jun 19 06:30:01 PST 2022]: Verifying files
+
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PRODBFI_CPS
+	bck_202206190105.tar.gz
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PRODBFI_CRA2
+	bck_202206190104.tar.gz
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PRODBFI_CTIS
+	bck_202206190102.tar.gz
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PRODBFI_MASTER_DATA_MNGT
+	bck_202206190106.tar.gz
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PRODBFI_RCT
+	bck_202206190103.tar.gz
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PRODBFI_TRUCKSCALE
+	bck_202206190105.tar.gz
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PROD_BIOTECH
+	bck_202206190100.tar.gz
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PROD_REVIVE
+	bck_202206190103.tar.gz
+
+✅✅	/data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/SLDDATA
+	bck_202206190106.tar.gz
+
+❌❌	PRODBFI_FSQR (does not exist)
+
+
+❌❌	PRODBFI_FDSS (does not exist)
+
+
+
+[Sun Jun 19 06:30:02 PST 2022]: File verification complete 
+
+======================================================================
+
+[Sun Jun 19 06:30:02 PST 2022]: Starting file size comparison
+
+
+✅   PRODBFI_CPS
+  	Stat : 81199306 - 81189019 = 10287 Bytes
+   	Increased 10.29 KB (0.013 %) since 06-18-2022
+
+
+✅   PRODBFI_CRA2
+  	Stat : 88800448 - 88751872 = 48576 Bytes
+   	Increased 48.58 KB (0.055 %) since 06-18-2022
+
+
+✅   PRODBFI_CTIS
+  	Stat : 98392792 - 98248933 = 143859 Bytes
+   	Increased 143.86 KB (0.146 %) since 06-18-2022
+
+
+✅   PRODBFI_MASTER_DATA_MNGT
+  	Stat : 88575100 - 88560006 = 15094 Bytes
+   	Increased 15.09 KB (0.017 %) since 06-18-2022
+
+
+✅   PRODBFI_RCT
+  	Stat : 87442084 - 87352667 = 89417 Bytes
+   	Increased 89.42 KB (0.102 %) since 06-18-2022
+
+
+❌   PRODBFI_TRUCKSCALE
+  	Stat : 79521196 - 79531671 = -10475 Bytes
+   	Decreased 10.47 KB (-0.013 %) since 06-18-2022
+
+
+✅   PROD_BIOTECH
+  	Stat : 496241352 - 493447828 = 2793524 Bytes
+   	Increased 2.79 MB (0.563 %) since 06-18-2022
+
+
+❌   PROD_REVIVE
+  	Stat : 163405352 - 163633246 = -227894 Bytes
+   	Decreased 227.89 KB (-0.139 %) since 06-18-2022
+
+
+❌   SLDDATA
+  	Stat : 72907571 - 72907938 = -367 Bytes
+   	Decreased 367 Bytes (-0.001 %) since 06-18-2022
+
+
+❌   PRODBFI_FSQR
+	The folder /data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PRODBFI_FSQR is empty or does not exist
+	The folder /data/PROD_DB_BACKUP/JUNE 2022/06-18-2022/PRODBFI_FSQR is empty or does not exist
+
+
+❌   PRODBFI_FDSS
+	The folder /data/PROD_DB_BACKUP/JUNE 2022/06-19-2022/PRODBFI_FDSS is empty or does not exist
+	The folder /data/PROD_DB_BACKUP/JUNE 2022/06-18-2022/PRODBFI_FDSS is empty or does not exist
+
+
+======================================================================
+[Sun Jun 19 06:30:02 PST 2022]: End
+
+Run this command on bfi2 server to check it manually: /opt/db-backup-verifier/scripts/verify.sh 06-19-2022

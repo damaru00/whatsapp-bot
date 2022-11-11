@@ -1,0 +1,205 @@
+Script started on 2022-06-13 10:29:57+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="211" LINES="55"]
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# ll
+total 76
+drwxr-xr-x   7 root root  4096 Jun 13 10:29 [0m[01;34m.[0m/
+drwxr-xr-x   5 root root  4096 Jun 10 13:51 [01;34m..[0m/
+-rw-r--r--   1 root root  1025 Jun 10 18:49 index.js
+drwxr-xr-x   2 root root  4096 Jun 13 10:29 [01;34mlogs[0m/
+drwxr-xr-x 121 root root  4096 Jun 10 17:54 [01;34mnode_modules[0m/
+-rw-r--r--   1 root root   344 Jun 10 17:54 package.json
+-rw-r--r--   1 root root 39300 Jun 10 17:54 package-lock.json
+drwxr-xr-x   2 root root  4096 Jun 13 10:09 [01;34mscripts[0m/
+drwxr-xr-x   2 root root  4096 Jun 13 10:27 [01;34mtext-files[0m/
+-rw-r--r--   1 root root     0 Jun 13 10:29 typescript
+drwxr-xr-x   3 root root  4096 Jun 10 14:40 [01;34m.wwebjs_auth[0m/
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# script[K[K[K[K[K[Kcd scripts/
+]0;root@elasticsearch: /opt/whatsapp-bot/scriptsroot@elasticsearch:/opt/whatsapp-bot/scripts# ll
+total 12
+drwxr-xr-x 2 root root 4096 Jun 13 10:09 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Jun 13 10:29 [01;34m..[0m/
+-rwxr--r-- 1 root root  200 Jun 13 10:09 [01;32msend-alerts.sh[0m*
+]0;root@elasticsearch: /opt/whatsapp-bot/scriptsroot@elasticsearch:/opt/whatsapp-bot/scripts# cd ..
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# cd logs/
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# cd ..
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# l[Kcd scripts/
+]0;root@elasticsearch: /opt/whatsapp-bot/scriptsroot@elasticsearch:/opt/whatsapp-bot/scripts# l
+[0m[01;32msend-alerts.sh[0m*
+]0;root@elasticsearch: /opt/whatsapp-bot/scriptsroot@elasticsearch:/opt/whatsapp-bot/scripts# catr [K[K[K[K[Ksend s[K[K[K[K[K[Kcat send-alerts.sh 
+#!/bin/bash
+
+echo [`date`]": Starting sending"
+
+curDate=$(date +"%m-%d-%Y")
+
+send="curl http://95.111.192.198:3000/send-backup-verifier/${curDate}"
+
+echo $send
+
+RESPONSE=`$send`
+
+echo [`date`]": End"
+]0;root@elasticsearch: /opt/whatsapp-bot/scriptsroot@elasticsearch:/opt/whatsapp-bot/scripts# cd ..
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# cd text-files/
+]0;root@elasticsearch: /opt/whatsapp-bot/text-filesroot@elasticsearch:/opt/whatsapp-bot/text-files# /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1
+]0;root@elasticsearch: /opt/whatsapp-bot/text-filesroot@elasticsearch:/opt/whatsapp-bot/text-files# ll
+total 12
+drwxr-xr-x 2 root root 4096 Jun 13 10:27 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Jun 13 10:29 [01;34m..[0m/
+-rw-r--r-- 1 root root 3099 Jun 13 10:27 06-13-2022.txt
+]0;root@elasticsearch: /opt/whatsapp-bot/text-filesroot@elasticsearch:/opt/whatsapp-bot/text-files# ca[K[Knano 06-13-2022.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# cd logs/
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# ll
+total 12
+drwxr-xr-x 2 root root 4096 Jun 13 10:32 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Jun 13 10:29 [01;34m..[0m/
+-rw-r--r-- 1 root root  472 Jun 13 10:32 send-alerts.log
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# nno [K[K[Knano s[K[K[K[K[K[K[Knano send-alerts.log 
+[?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;99H(B[0;7m[ Reading... ](B[m[53;98H(B[0;7m[ Read 6 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                                      send-alerts.log                                                                                                [1;210H(B[m[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word[53d[2d[39;49m(B[m[Mon 13 Jun 2022 10:32:24 AM PST]: Starting sending[3dcurl http://95.111.192.198:3000/send-backup-verifier/06-13-2022[4;3H% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current[5;34HDload  Upload   Total   Spent    Left  Speed[6d^M  0     0    0     0    0     0[40G0[47G0 --:--:-- --:--:-- --:--:--     0^M100    12  100    12    0     0  12000[127G0 --:--:-- --:--:-- --:--:-- 12000[7d[Mon 13 Jun 2022 10:32:24 AM PST]: End[2d[?12l[?25h[?25l[53d[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# cd ..
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# curl -d http://95.111.192.198:3000/send-backup-verifier/06-13-2022
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# cru l[K[K[K[Kurl -d ""http://95.111.192.198:3000/send-backup-verifier/06-13-2022"
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# cd [K[K[Kll
+total 80
+drwxr-xr-x   7 root root  4096 Jun 13 10:29 [0m[01;34m.[0m/
+drwxr-xr-x   5 root root  4096 Jun 10 13:51 [01;34m..[0m/
+-rw-r--r--   1 root root  1025 Jun 10 18:49 index.js
+drwxr-xr-x   2 root root  4096 Jun 13 10:35 [01;34mlogs[0m/
+drwxr-xr-x 121 root root  4096 Jun 10 17:54 [01;34mnode_modules[0m/
+-rw-r--r--   1 root root   344 Jun 10 17:54 package.json
+-rw-r--r--   1 root root 39300 Jun 10 17:54 package-lock.json
+drwxr-xr-x   2 root root  4096 Jun 13 10:09 [01;34mscripts[0m/
+drwxr-xr-x   2 root root  4096 Jun 13 10:27 [01;34mtext-files[0m/
+-rw-r--r--   1 root root  4096 Jun 13 10:32 typescript
+drwxr-xr-x   3 root root  4096 Jun 10 14:40 [01;34m.wwebjs_auth[0m/
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# cd text-files/
+]0;root@elasticsearch: /opt/whatsapp-bot/text-filesroot@elasticsearch:/opt/whatsapp-bot/text-files# ll
+total 12
+drwxr-xr-x 2 root root 4096 Jun 13 10:27 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Jun 13 10:29 [01;34m..[0m/
+-rw-r--r-- 1 root root 3099 Jun 13 10:27 06-13-2022.txt
+]0;root@elasticsearch: /opt/whatsapp-bot/text-filesroot@elasticsearch:/opt/whatsapp-bot/text-files# cat 06-13-2022.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# cd logs/
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# ll
+total 12
+drwxr-xr-x 2 root root 4096 Jun 13 10:35 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Jun 13 10:29 [01;34m..[0m/
+-rw-r--r-- 1 root root  472 Jun 13 10:32 send-alerts.log
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# cat send-alerts.log 
+[Mon 13 Jun 2022 10:32:24 AM PST]: Starting sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-13-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 10:32:24 AM PST]: End
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# crobtan[K[K[K[Kntab -e
+no crontab for root - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/vim.basic
+  3. /usr/bin/vim.tiny
+  4. /bin/ed
+
+Choose 1-4 [1]: 1
+[?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;99H(B[0;7m[ Reading... ](B[m[53;98H(B[0;7m[ Read 23 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                                /tmp/crontab.82KMAK/crontab                                                                                          [1;210H(B[m[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word[53d[2d[39;49m[36m# Edit this file to introduce tasks to be run by cron.[3d# [4d# Each task to run has to be defined through a single line[5d# indicating with different fields when the task will be run[6d# and what command to run for the task[7d# [8d# To define the time you can provide concrete values for[9d# minute (m), hour (h), day of month (dom), month (mon),[10d# and day of week (dow) or use '*' in these fields (for 'any').[11d# [12d# Notice that tasks will be started based on the cron's system[13d# daemon's notion of time and timezones.[14d# [15d# Output of the crontab jobs (including errors) is sent through[16d# email to the user the crontab file belongs to (unless redirected).[17d# [18d# For example, you can run a backup of all your user accounts[19d# at 5 a.m every week with:[20d# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/[21d# [22d# For more information see the manual pages of crontab(5) and cron(8)[23d# [24d# m h  dom mon dow   command[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[53d[K[25d[?12l[?25h[?25l[1;202H(B[0;7mModified(B[m[25d0 7 * * * /bin/sh[?12l[?25h[?25l [?12l[?25h[?25l/opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[44G[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1P[?12l[?25h[?25l1 * * * /bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&10 1[?12l[?25h[?25l11 * * * /bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1[5G[?12l[?25h[?25l[53d(B[0;7mSave modified buffer?                                                                                                                                                                                              [54;1H Y(B[m Yes[K[55d(B[0;7m N(B[m No  [55;17H(B[0;7m^C(B[m Cancel[K[53;23H[?12l[?25h[?25l[54d(B[0;7m^G(B[m Get Help[54;53H(B[0;7mM-D(B[m DOS Format[54;105H(B[0;7mM-A(B[m Append[54;157H(B[0;7mM-B(B[m Backup File[55d(B[0;7m^C(B[m Cancel[17G         [55;53H(B[0;7mM-M(B[m Mac Format[55;105H(B[0;7mM-P(B[m Prepend[55;157H(B[0;7m^T(B[m To Files[53d(B[0;7mFile Name to Write: /tmp/crontab.82KMAK/crontab(B[m[53;48H[?12l[?25h[?25l[53;98H[1K (B[0;7m[ Writing... ](B[m[K[1;202H(B[0;7m        (B[m[53;97H(B[0;7m[ Wrote 24 lines ](B[m[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004lcrontab: installing new crontab
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# cat send-alerts.log 
+[Mon 13 Jun 2022 10:32:24 AM PST]: Starting sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-13-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 10:32:24 AM PST]: End
+[Mon 13 Jun 2022 10:38:59 AM PST]: Starting sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-13-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 10:38:59 AM PST]: End
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# tail send-alerts.log [1@-[1@f[1@ 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 10:32:24 AM PST]: End
+[Mon 13 Jun 2022 10:38:59 AM PST]: Starting sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-13-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 10:38:59 AM PST]: End
+^C
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# crontab e
+e: No such file or directory
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# ll
+total 12
+drwxr-xr-x 2 root root 4096 Jun 13 10:35 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Jun 13 10:29 [01;34m..[0m/
+-rw-r--r-- 1 root root  944 Jun 13 10:38 send-alerts.log
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# crontab -e
+[?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;99H(B[0;7m[ Reading... ](B[m[53;98H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                                /tmp/crontab.9fFBuZ/crontab                                                                                          [1;210H(B[m[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word[53d[2d[39;49m[36m# Edit this file to introduce tasks to be run by cron.[3d# [4d# Each task to run has to be defined through a single line[5d# indicating with different fields when the task will be run[6d# and what command to run for the task[7d# [8d# To define the time you can provide concrete values for[9d# minute (m), hour (h), day of month (dom), month (mon),[10d# and day of week (dow) or use '*' in these fields (for 'any').[11d# [12d# Notice that tasks will be started based on the cron's system[13d# daemon's notion of time and timezones.[14d# [15d# Output of the crontab jobs (including errors) is sent through[16d# email to the user the crontab file belongs to (unless redirected).[17d# [18d# For example, you can run a backup of all your user accounts[19d# at 5 a.m every week with:[20d# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/[21d# [22d# For more information see the manual pages of crontab(5) and cron(8)[23d# [24d# m h  dom mon dow   command[25d[39m(B[m0 11 * * * /bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l0[?12l[?25h[?25l [?12l[?25h[?25l[53d[K[25;4H[?12l[?25h[?25l1[?12l[?25h[?25l [?12l[?25h[?25l*[?12l[?25h[?25l [?12l[?25h[?25l*[?12l[?25h[?25l [?12l[?25h[?25l*[?12l[?25h[?25l[1;202H(B[0;7mModified(B[m[25;10H[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P1[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l*/1 * * * * /bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1[25;12H[?12l[?25h[?25l[53d(B[0;7mSave modified buffer?                                                                                                                                                                                              [54;1H Y(B[m Yes[K[55d(B[0;7m N(B[m No  [55;17H(B[0;7m^C(B[m Cancel[K[53;23H[?12l[?25h[?25l[54d(B[0;7m^G(B[m Get Help[54;53H(B[0;7mM-D(B[m DOS Format[54;105H(B[0;7mM-A(B[m Append[54;157H(B[0;7mM-B(B[m Backup File[55d(B[0;7m^C(B[m Cancel[17G         [55;53H(B[0;7mM-M(B[m Mac Format[55;105H(B[0;7mM-P(B[m Prepend[55;157H(B[0;7m^T(B[m To Files[53d(B[0;7mFile Name to Write: /tmp/crontab.9fFBuZ/crontab(B[m[53;48H[?12l[?25h[?25l[53;98H[1K (B[0;7m[ Writing... ](B[m[K[1;202H(B[0;7m        (B[m[53;97H(B[0;7m[ Wrote 24 lines ](B[m[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004lcrontab: installing new crontab
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# tail -f send-alerts.log 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 10:32:24 AM PST]: End
+[Mon 13 Jun 2022 10:38:59 AM PST]: Starting sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-13-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 10:38:59 AM PST]: End
+^C
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# cd ..
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# nano [K[K[K[K[Kcd scripts/
+]0;root@elasticsearch: /opt/whatsapp-bot/scriptsroot@elasticsearch:/opt/whatsapp-bot/scripts# nano send-alerts.sh 
+[?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;99H(B[0;7m[ Reading... ](B[m[53;98H(B[0;7m[ Read 13 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                                      send-alerts.sh                                                                                                 [1;210H(B[m[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word[53d[2d[39;49m[36m#!/bin/bash[4d(B[0;1m[34mecho[39m(B[m [32m[`[39m(B[mdate[32m`](B[0;1m[33m": Starting sending"[6d[39m(B[mcurDate[32m=$([39m(B[mdate +(B[0;1m[33m"%m-%d-%Y"(B[0m[32m)[8d[39m(B[msend[32m=(B[0;1m[33m"curl http://95.111.192.198:3000/send-backup-verifier/${curDate}"[10d[34mecho[39m(B[m (B[0;1m[31m$send[12d[39m(B[mRESPONSE[32m=`(B[0;1m[31m$send(B[0m[32m`[14d(B[0;1m[34mecho[39m(B[m [32m[`[39m(B[mdate[32m`](B[0;1m[33m": End"[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l [?12l[?25h[?25l[C[?12l[?25h[?25l[11G[?12l[?25h[?25le[?12l[?25h[?25l[14G[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[18G[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[C[?12l[?25h[?25l[53d[K[4;26H[?12l[?25h[?25l[?12l[?25h[?25l[1;202H(B[0;7mModified(B[m[4;24H[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[53d(B[0;7mSave modified buffer?                                                                                                                                                                                              [54;1H Y(B[m Yes[K[55d(B[0;7m N(B[m No  [55;17H(B[0;7m^C(B[m Cancel[K[53;23H[?12l[?25h[?25l[54d(B[0;7m^G(B[m Get Help[54;53H(B[0;7mM-D(B[m DOS Format[54;105H(B[0;7mM-A(B[m Append[54;157H(B[0;7mM-B(B[m Backup File[55d(B[0;7m^C(B[m Cancel[17G         [55;53H(B[0;7mM-M(B[m Mac Format[55;105H(B[0;7mM-P(B[m Prepend[55;157H(B[0;7m^T(B[m To Files[53d(B[0;7mFile Name to Write: send-alerts.sh(B[m[53;35H[?12l[?25h[?25l[53;98H[1K (B[0;7m[ Writing... ](B[m[K[1;202H(B[0;7m        (B[m[53;97H(B[0;7m[ Wrote 13 lines ](B[m[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004l]0;root@elasticsearch: /opt/whatsapp-bot/scriptsroot@elasticsearch:/opt/whatsapp-bot/scripts# cd ..
+]0;root@elasticsearch: /opt/whatsapp-botroot@elasticsearch:/opt/whatsapp-bot# cd logs/
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# tail -f send-alerts.log 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 10:38:59 AM PST]: End
+[Mon 13 Jun 2022 11:04:01 AM PST]: Starting sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-13-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 11:04:01 AM PST]: End
+[Mon 13 Jun 2022 11:05:01 AM PST]: Start sending
+curl http://95.111.192.198:3000/send-backup-verifier/06-13-2022
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    12  100    12    0     0  12000      0 --:--:-- --:--:-- --:--:-- 12000
+[Mon 13 Jun 2022 11:05:01 AM PST]: End
+^C
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# ls -l  /var/spool/cron/crontabs/root
+-rw------- 1 root crontab 1198 Jun 13 11:03 /var/spool/cron/crontabs/root
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# date
+Mon 13 Jun 2022 11:05:25 AM PST
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# crontab -e
+[?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;99H(B[0;7m[ Reading... ](B[m[53;98H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                                /tmp/crontab.dhHij5/crontab                                                                                          [1;210H(B[m[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word[53d[2d[39;49m[36m# Edit this file to introduce tasks to be run by cron.[3d# [4d# Each task to run has to be defined through a single line[5d# indicating with different fields when the task will be run[6d# and what command to run for the task[7d# [8d# To define the time you can provide concrete values for[9d# minute (m), hour (h), day of month (dom), month (mon),[10d# and day of week (dow) or use '*' in these fields (for 'any').[11d# [12d# Notice that tasks will be started based on the cron's system[13d# daemon's notion of time and timezones.[14d# [15d# Output of the crontab jobs (including errors) is sent through[16d# email to the user the crontab file belongs to (unless redirected).[17d# [18d# For example, you can run a backup of all your user accounts[19d# at 5 a.m every week with:[20d# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/[21d# [22d# For more information see the manual pages of crontab(5) and cron(8)[23d# [24d# m h  dom mon dow   command[25d[39m(B[m*/1 * * * * /bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[?12l[?25h[?25l[1;202H(B[0;7mModified[53d(B[m[K[1;210H[26d[36m#[39m(B[m[?12l[?25h[?25l[K[?12l[?25h[?25l[25;108H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[53d(B[0;7mSave modified buffer?                                                                                                                                                                                              [54;1H Y(B[m Yes[K[55d(B[0;7m N(B[m No  [55;17H(B[0;7m^C(B[m Cancel[K[53;23H[?12l[?25h[?25l[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004lNo modification made
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# crontab -e
+[?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;99H(B[0;7m[ Reading... ](B[m[53;98H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                                /tmp/crontab.HaJEUp/crontab                                                                                          [1;210H(B[m[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word[53d[2d[39;49m[36m# Edit this file to introduce tasks to be run by cron.[3d# [4d# Each task to run has to be defined through a single line[5d# indicating with different fields when the task will be run[6d# and what command to run for the task[7d# [8d# To define the time you can provide concrete values for[9d# minute (m), hour (h), day of month (dom), month (mon),[10d# and day of week (dow) or use '*' in these fields (for 'any').[11d# [12d# Notice that tasks will be started based on the cron's system[13d# daemon's notion of time and timezones.[14d# [15d# Output of the crontab jobs (including errors) is sent through[16d# email to the user the crontab file belongs to (unless redirected).[17d# [18d# For example, you can run a backup of all your user accounts[19d# at 5 a.m every week with:[20d# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/[21d# [22d# For more information see the manual pages of crontab(5) and cron(8)[23d# [24d# m h  dom mon dow   command[25d[39m(B[m*/1 * * * * /bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1[2d[?12l[?25h[?25l[3d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[1;202H(B[0;7mModified(B[m[25d[36m#*/1 * * * * /bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1#[39m(B[m[?12l[?25h[?25l[53d(B[0;7mSave modified buffer?                                                                                                                                                                                              [54;1H Y(B[m Yes[K[55d(B[0;7m N(B[m No  [55;17H(B[0;7m^C(B[m Cancel[K[53;23H[?12l[?25h[?25l[54d(B[0;7m^G(B[m Get Help[54;53H(B[0;7mM-D(B[m DOS Format[54;105H(B[0;7mM-A(B[m Append[54;157H(B[0;7mM-B(B[m Backup File[55d(B[0;7m^C(B[m Cancel[17G         [55;53H(B[0;7mM-M(B[m Mac Format[55;105H(B[0;7mM-P(B[m Prepend[55;157H(B[0;7m^T(B[m To Files[53d(B[0;7mFile Name to Write: /tmp/crontab.HaJEUp/crontab(B[m[53;48H[?12l[?25h[?25l[53;98H[1K (B[0;7m[ Writing... ](B[m[K[1;202H(B[0;7m        (B[m[53;97H(B[0;7m[ Wrote 24 lines ](B[m[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004lcrontab: installing new crontab
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# stat /var/spool/cron/www-data
+stat: cannot stat '/var/spool/cron/www-data': No such file or directory
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# crobtab -e
+
+Command 'crobtab' not found, did you mean:
+
+  command 'crontab' from deb cron (3.0pl1-136ubuntu1)
+  command 'crontab' from deb bcron (0.11-9)
+  command 'crontab' from deb systemd-cron (1.5.14-2)
+
+Try: apt install <deb name>
+
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# crontabn[K -e
+[?2004h[?1049h[22;0;0t[1;55r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[53;99H(B[0;7m[ Reading... ](B[m[53;98H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 4.8                                                                                /tmp/crontab.VN7LHh/crontab                                                                                          [1;210H(B[m[54d(B[0;7m^G(B[m Get Help[18G(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut Text[69G(B[0;7m^J(B[m Justify[86G(B[0;7m^C(B[m Cur Pos[103G(B[0;7mM-U(B[m Undo[54;120H(B[0;7mM-A(B[m Mark Text    (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[54;188H(B[0;7m^◀(B[m Prev Word[55d(B[0;7m^X(B[m Exit[55;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste Text    (B[0;7m^T(B[m To Spell[86G(B[0;7m^_(B[m Go To Line    (B[0;7mM-E(B[m Redo[55;120H(B[0;7mM-6(B[m Copy Text    (B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[55;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^▶(B[m Next Word[53d[2d[39;49m[36m# Edit this file to introduce tasks to be run by cron.[3d# [4d# Each task to run has to be defined through a single line[5d# indicating with different fields when the task will be run[6d# and what command to run for the task[7d# [8d# To define the time you can provide concrete values for[9d# minute (m), hour (h), day of month (dom), month (mon),[10d# and day of week (dow) or use '*' in these fields (for 'any').[11d# [12d# Notice that tasks will be started based on the cron's system[13d# daemon's notion of time and timezones.[14d# [15d# Output of the crontab jobs (including errors) is sent through[16d# email to the user the crontab file belongs to (unless redirected).[17d# [18d# For example, you can run a backup of all your user accounts[19d# at 5 a.m every week with:[20d# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/[21d# [22d# For more information see the manual pages of crontab(5) and cron(8)[23d# [24d# m h  dom mon dow   command[25d#*/1 * * * * /bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1[2d[39m(B[m[?12l[?25h[?25l[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[?12l[?25h[?25l[53d[K[26d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;202H(B[0;7mModified(B[m[26d15 11 * * *[?12l[?25h[?25l [?12l[?25h[?25l/bin/sh /opt/whatsapp-bot/scripts/send-alerts.sh >> /opt/whatsapp-bot/logs/send-alerts.log 2>&1[?12l[?25h[?25l[53d(B[0;7mSave modified buffer?                                                                                                                                                                                              [54;1H Y(B[m Yes[K[55d(B[0;7m N(B[m No  [55;17H(B[0;7m^C(B[m Cancel[K[53;23H[?12l[?25h[?25l[54d(B[0;7m^G(B[m Get Help[54;53H(B[0;7mM-D(B[m DOS Format[54;105H(B[0;7mM-A(B[m Append[54;157H(B[0;7mM-B(B[m Backup File[55d(B[0;7m^C(B[m Cancel[17G         [55;53H(B[0;7mM-M(B[m Mac Format[55;105H(B[0;7mM-P(B[m Prepend[55;157H(B[0;7m^T(B[m To Files[53d(B[0;7mFile Name to Write: /tmp/crontab.VN7LHh/crontab(B[m[53;48H[?12l[?25h[?25l[53;98H[1K (B[0;7m[ Writing... ](B[m[K[1;202H(B[0;7m        (B[m[53;97H(B[0;7m[ Wrote 25 lines ](B[m[J[55d[?12l[?25h[55;1H[?1049l[23;0;0t[?1l>[?2004lcrontab: installing new crontab
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elasticsearch:/opt/whatsapp-bot/logs# ll
+total 12
+drwxr-xr-x 2 root root 4096 Jun 13 10:35 [0m[01;34m.[0m/
+drwxr-xr-x 7 root root 4096 Jun 13 10:29 [01;34m..[0m/
+-rw-r--r-- 1 root root 1885 Jun 13 11:05 send-alerts.log
+]0;root@elasticsearch: /opt/whatsapp-bot/logsroot@elastic
